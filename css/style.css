@@ -19,6 +19,10 @@ h1 {
   margin: 0 15px 0 15px;
 }
 
+fieldset {
+  border: none !important;
+}
+
 /*====================================
         HEADER
 ====================================*/
@@ -162,10 +166,41 @@ textarea {
 }
 
 /*====================================
+        Clearfix
+====================================*/
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/*====================================
         Media Queries
 ====================================*/
 
 @media (min-width: 768px) {
 
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .form input[type="name"],
+  .form input[type="email"],
+  .form input[type="number"],
+  .form input[type="text"],
+  .form input[type="tel"],
+  .form select {
+    float: right;
+    width: 75%;
+  }
+  
+
+
 
 }
+
