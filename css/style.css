@@ -189,16 +189,26 @@ textarea {
     margin: 0 auto;
   }
 
-  .form input[type="name"],
-  .form input[type="email"],
-  .form input[type="number"],
-  .form input[type="text"],
-  .form input[type="tel"],
-  .form select {
-    float: right;
-    width: 75%;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  input[type="name"],
+  input[type="email"],
+  input[type="number"],
+  input[type="text"],
+  input[type="tel"],
+  select {
   }
   
+  textarea {
+    max-width: 760px;
+  }
 
 
 
