@@ -20,7 +20,9 @@ h1 {
 }
 
 fieldset {
-  border: none !important;
+  margin: 0;
+  padding: 0;
+  border-style: none;
 }
 
 /*====================================
@@ -66,12 +68,6 @@ fieldset {
 
 legend h1 {
   padding: 30px 0 30px 0; 
-}
-
-fieldset {
-  padding: 0;
-  border-style: none;
-  width: 100%;
 }
 
 legend {
@@ -127,7 +123,7 @@ label {
   padding-top: 15px;
 }
 
-input#zip {
+input#user_zip {
   width: 50%;
 }
 
@@ -183,20 +179,19 @@ textarea {
 ====================================*/
 
 @media (min-width: 768px) {
-
+  
   .container {
     max-width: 768px;
     margin: 0 auto;
   }
 
-  form {
+  .form_container {
+    max-width: 768px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
-  label {
-    margin: 0;
-  }
 
   input[type="name"],
   input[type="email"],
@@ -204,12 +199,17 @@ textarea {
   input[type="text"],
   input[type="tel"],
   select {
+    width: 80%;
   }
   
   textarea {
     max-width: 760px;
   }
 
+  input#user_zip {
+    align-items: left;
+    margin: auto;
+  }
 
 
 }
