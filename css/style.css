@@ -108,6 +108,7 @@ textarea:focus {
 }
 
 ::-webkit-input-placeholder {
+  color: #ccc;
   text-align: right;
   font-style: italic;
   padding-right: 15px;
@@ -207,8 +208,8 @@ textarea {
   }
 
   input#user_zip {
-    align-items: left;
-    margin: auto;
+    flex-basis: 25%;
+    align-self: auto;
   }
 
 
